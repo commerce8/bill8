@@ -1,0 +1,5 @@
+   Compiling bill8-reporting v0.1.0 (/home/hamid/dev/sentin8.new/bill8/bill8-reporting)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.69s
+     Running unittests src/lib.rs (target/debug/deps/bill8_reporting_server-f94a619359d489d8)
+     Running unittests src/main.rs (target/debug/deps/bill8_reporting-ec41ebc770e240c6)
+   Doc-tests bill8_reporting_server

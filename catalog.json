@@ -1,0 +1,58 @@
+[
+  {
+    "service_type": "bill8:merchants",
+    "binary": "bill8-merchants",
+    "database_env_vars": [
+      "BILL8_MERCHANTS_DATABASE_URL"
+    ]
+  },
+  {
+    "service_type": "bill8:payments",
+    "binary": "bill8-payments",
+    "database_env_vars": [
+      "BILL8_PAYMENTS_DATABASE_URL"
+    ]
+  },
+  {
+    "service_type": "bill8:checkout",
+    "binary": "bill8-checkout",
+    "database_env_vars": [
+      "BILL8_CHECKOUT_DATABASE_URL"
+    ]
+  },
+  {
+    "service_type": "bill8:billing",
+    "binary": "bill8-billing",
+    "database_env_vars": [
+      "BILL8_BILLING_DATABASE_URL"
+    ]
+  },
+  {
+    "service_type": "bill8:ledger",
+    "binary": "bill8-ledger",
+    "database_env_vars": [
+      "BILL8_LEDGER_DATABASE_URL"
+    ]
+  },
+  {
+    "service_type": "bill8:webhooks",
+    "binary": "bill8-webhooks",
+    "database_env_vars": [
+      "BILL8_WEBHOOKS_DATABASE_URL"
+    ]
+  },
+  {
+    "service_type": "bill8:risk",
+    "binary": "bill8-risk",
+    "database_env_vars": [
+      "BILL8_RISK_DATABASE_URL"
+    ]
+  },
+  {
+    "service_type": "bill8:reporting",
+    "binary": "bill8-reporting",
+    "database_env_vars": [
+      "BILL8_REPORTING_DATABASE_URL"
+    ]
+  }
+]

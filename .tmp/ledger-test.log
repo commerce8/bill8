@@ -1,0 +1,5 @@
+   Compiling bill8-ledger v0.1.0 (/home/hamid/dev/sentin8.new/bill8/bill8-ledger)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.55s
+     Running unittests src/lib.rs (target/debug/deps/bill8_ledger_server-89a29c39eaf07ad5)
+     Running unittests src/main.rs (target/debug/deps/bill8_ledger-7fb62b5da341360f)
+   Doc-tests bill8_ledger_server

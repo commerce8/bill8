@@ -1,0 +1,5 @@
+   Compiling bill8-webhooks v0.1.0 (/home/hamid/dev/sentin8.new/bill8/bill8-webhooks)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.27s
+     Running unittests src/lib.rs (target/debug/deps/bill8_webhooks_server-eac18b2a2a31dff3)
+     Running unittests src/main.rs (target/debug/deps/bill8_webhooks-e4f7d041cb644771)
+   Doc-tests bill8_webhooks_server

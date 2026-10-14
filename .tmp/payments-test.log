@@ -1,0 +1,5 @@
+   Compiling bill8-payments v0.1.0 (/home/hamid/dev/sentin8.new/bill8/bill8-payments)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 3.03s
+     Running unittests src/lib.rs (target/debug/deps/bill8_payments_server-080f13d11be1e151)
+     Running unittests src/main.rs (target/debug/deps/bill8_payments-8ba9e179e42c47e8)
+   Doc-tests bill8_payments_server

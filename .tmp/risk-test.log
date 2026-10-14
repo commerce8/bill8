@@ -1,0 +1,5 @@
+   Compiling bill8-risk v0.1.0 (/home/hamid/dev/sentin8.new/bill8/bill8-risk)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.95s
+     Running unittests src/lib.rs (target/debug/deps/bill8_risk_server-56a1ca6a912edf63)
+     Running unittests src/main.rs (target/debug/deps/bill8_risk-b91bb88beb68bef7)
+   Doc-tests bill8_risk_server

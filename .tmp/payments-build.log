@@ -1,0 +1,323 @@
+    Updating git repository `https://github.com/Sentin8/sentin8-sdk`
+    Updating crates.io index
+    Blocking waiting for file lock on package cache
+     Locking 121 packages to latest compatible versions
+      Adding aws-config v1.12.0
+      Adding aws-credential-types v1.3.0
+      Adding aws-runtime v1.10.0
+      Adding aws-sdk-sso v1.114.0
+      Adding aws-sdk-ssooidc v1.116.0
+      Adding aws-sdk-sts v1.119.0
+      Adding aws-sigv4 v1.6.0
+      Adding aws-smithy-async v1.3.0
+      Adding aws-smithy-http v0.64.1
+      Adding aws-smithy-http-client v1.5.0
+      Adding aws-smithy-json v0.63.1
+      Adding aws-smithy-observability v0.3.0
+      Adding aws-smithy-query v0.62.1
+      Adding aws-smithy-runtime v1.16.0
+      Adding aws-smithy-runtime-api v1.19.0
+      Adding aws-smithy-runtime-api-macros v1.1.0
+      Adding aws-smithy-schema v0.2.1
+      Adding aws-smithy-types v0.101.0
+      Adding aws-smithy-types v1.8.1
+      Adding aws-smithy-xml v0.62.1
+      Adding aws-types v1.6.0
+      Adding base64-simd v0.8.0
+      Adding bytes-utils v0.1.4
+      Adding const-hex v1.19.3
+      Adding crc16 v0.4.0
+      Adding crossbeam-channel v0.5.17
+      Adding dashmap v6.2.1
+      Adding dispose v0.5.2
+      Adding dispose-derive v0.4.2
+      Adding file-rotate v0.8.0
+      Adding foldhash v0.2.0
+      Adding glide-core v0.1.1
+      Adding glide-core-engine v0.1.1
+      Adding glide-logger v0.1.1
+      Adding glide-telemetry v0.1.1
+      Adding hashbrown v0.14.5
+      Adding http v0.2.12
+      Adding hyper-timeout v0.5.2
+      Adding jni v0.22.4
+      Adding jni-macros v0.22.4
+      Adding jni-sys v0.4.1
+      Adding jni-sys-macros v0.4.1
+      Adding linux-raw-sys v0.4.15
+      Adding linux-raw-sys v0.12.1
+      Adding lru v0.18.5
+      Adding lz4 v1.28.1
+      Adding lz4-sys v1.11.1+lz4-1.10.0
+      Adding nanoid v0.4.0
+      Adding nom v8.0.0
+      Adding opentelemetry v0.32.0
+      Adding opentelemetry-http v0.32.0
+      Adding opentelemetry-otlp v0.32.0
+      Adding opentelemetry-proto v0.32.0
+      Adding opentelemetry_sdk v0.32.1
+      Adding outref v0.5.2
+      Adding pin-utils v0.1.1
+      Adding proptest v1.11.0
+      Adding prost v0.14.4
+      Adding prost-derive v0.14.4
+      Adding prost-types v0.14.4
+      Adding protobuf v3.7.2
+      Adding protobuf-codegen v3.7.2
+      Adding protobuf-parse v3.7.2
+      Adding protobuf-support v3.7.2
+      Adding rand_xorshift v0.4.0
+      Adding regex-lite v0.1.9
+      Adding reqwest v0.13.5
+      Adding rustc_version v0.4.1
+      Adding rustix v0.38.44
+      Adding rustix v1.1.5
+      Adding rustls-platform-verifier v0.7.1
+      Adding rustls-platform-verifier-android v0.2.0
+      Adding sealed v0.7.0
+      Adding sentin8 v0.1.0 (https://github.com/Sentin8/sentin8-sdk?tag=sdk-v0.3.0#94c0aeb9)
+      Adding sentin8-audit v0.1.0 (https://github.com/Sentin8/sentin8-sdk?tag=sdk-v0.3.0#94c0aeb9)
+      Adding sentin8-auth-client v0.1.0 (https://github.com/Sentin8/sentin8-sdk?tag=sdk-v0.3.0#94c0aeb9)
+      Adding sentin8-build-info v0.1.0 (https://github.com/Sentin8/sentin8-sdk?tag=sdk-v0.3.0#94c0aeb9)
+      Adding sentin8-bus-client v0.1.0 (https://github.com/Sentin8/sentin8-sdk?tag=sdk-v0.3.0#94c0aeb9)
+      Adding sentin8-bus-contracts v0.1.0 (https://github.com/Sentin8/sentin8-sdk?tag=sdk-v0.3.0#94c0aeb9)
+      Adding sentin8-config v0.1.0 (https://github.com/Sentin8/sentin8-sdk?tag=sdk-v0.3.0#94c0aeb9)
+      Adding sentin8-crypto v0.1.0 (https://github.com/Sentin8/sentin8-sdk?tag=sdk-v0.3.0#94c0aeb9)
+      Adding sentin8-errors v0.1.0 (https://github.com/Sentin8/sentin8-sdk?tag=sdk-v0.3.0#94c0aeb9)
+      Adding sentin8-fapiclient v0.1.0 (https://github.com/Sentin8/sentin8-sdk?tag=sdk-v0.3.0#94c0aeb9)
+      Adding sentin8-idempotency v0.1.0 (https://github.com/Sentin8/sentin8-sdk?tag=sdk-v0.3.0#94c0aeb9)
+      Adding sentin8-jwt v0.1.0 (https://github.com/Sentin8/sentin8-sdk?tag=sdk-v0.3.0#94c0aeb9)
+      Adding sentin8-m2m v0.1.0 (https://github.com/Sentin8/sentin8-sdk?tag=sdk-v0.3.0#94c0aeb9)
+      Adding sentin8-membus v0.1.0 (https://github.com/Sentin8/sentin8-sdk?tag=sdk-v0.3.0#94c0aeb9)
+      Adding sentin8-middleware v0.1.0 (https://github.com/Sentin8/sentin8-sdk?tag=sdk-v0.3.0#94c0aeb9)
+      Adding sentin8-openapi v0.1.0 (https://github.com/Sentin8/sentin8-sdk?tag=sdk-v0.3.0#94c0aeb9)
+      Adding sentin8-outbox v0.1.0 (https://github.com/Sentin8/sentin8-sdk?tag=sdk-v0.3.0#94c0aeb9)
+      Adding sentin8-registration v0.1.0 (https://github.com/Sentin8/sentin8-sdk?tag=sdk-v0.3.0#94c0aeb9)
+      Adding sentin8-rfw v0.1.0 (https://github.com/Sentin8/sentin8-sdk?tag=sdk-v0.3.0#94c0aeb9)
+      Adding sentin8-service-discovery v0.1.0 (https://github.com/Sentin8/sentin8-sdk?tag=sdk-v0.3.0#94c0aeb9)
+      Adding sentin8-shell v0.1.0 (https://github.com/Sentin8/sentin8-sdk?tag=sdk-v0.3.0#94c0aeb9)
+      Adding sentin8-shield v0.1.0 (https://github.com/Sentin8/sentin8-sdk?tag=sdk-v0.3.0#94c0aeb9)
+      Adding sentin8-tls v0.1.0 (https://github.com/Sentin8/sentin8-sdk?tag=sdk-v0.3.0#94c0aeb9)
+      Adding sentin8-tls-contracts v0.1.0 (https://github.com/Sentin8/sentin8-sdk?tag=sdk-v0.3.0#94c0aeb9)
+      Adding sentin8-workload-registry v0.1.0 (https://github.com/Sentin8/sentin8-sdk?tag=sdk-v0.3.0#94c0aeb9)
+      Adding simd_cesu8 v1.2.0
+      Adding simdutf8 v0.1.5
+      Adding strum v0.28.0
+      Adding strum_macros v0.28.0
+      Adding symlink v0.1.0
+      Adding tempfile v3.27.0
+      Adding tokio-retry2 v0.5.8
+      Adding tokio-retry2 v0.6.2
+      Adding tonic v0.14.6
+      Adding tonic-prost v0.14.6
+      Adding tonic-types v0.14.6
+      Adding tracing-appender v0.2.5
+      Adding unarray v0.1.4
+      Adding urlencoding v2.1.3
+      Adding valkey-glide v0.9.0
+      Adding versions v7.0.0
+      Adding vsimd v0.8.0
+      Adding webpki-root-certs v1.0.9
+      Adding which v4.4.2
+      Adding xmlparser v0.13.6
+      Adding zstd v0.14.0
+      Adding zstd-safe v8.0.0
+      Adding zstd-sys v2.1.0+zstd.1.5.7
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+   Compiling foldhash v0.2.0
+   Compiling syn v2.0.119
+   Compiling outref v0.5.2
+   Compiling num-integer v0.1.47
+   Compiling vsimd v0.8.0
+   Compiling pin-utils v0.1.1
+   Compiling hashbrown v0.17.1
+   Compiling rustls v0.23.45
+   Compiling uuid v1.27.0
+   Compiling getrandom v0.3.4
+   Compiling bitflags v2.13.2
+   Compiling crossbeam-utils v0.8.23
+   Compiling fastrand v2.5.0
+   Compiling bytes-utils v0.1.4
+   Compiling itertools v0.13.0
+   Compiling regex v1.13.1
+   Compiling rustc_version v0.4.1
+   Compiling rand v0.8.8
+   Compiling rustix v1.1.5
+   Compiling rustix v0.38.44
+   Compiling aws-smithy-async v1.3.0
+   Compiling futures-executor v0.3.34
+   Compiling protobuf v3.7.2
+   Compiling linux-raw-sys v0.4.15
+   Compiling linux-raw-sys v0.12.1
+   Compiling zstd-sys v2.1.0+zstd.1.5.7
+   Compiling const-hex v1.19.3
+   Compiling regex-lite v0.1.9
+   Compiling symlink v0.1.0
+   Compiling xmlparser v0.13.6
+   Compiling file-rotate v0.8.0
+   Compiling lz4-sys v1.11.1+lz4-1.10.0
+   Compiling zstd-safe v8.0.0
+   Compiling urlencoding v2.1.3
+   Compiling num-bigint v0.4.8
+   Compiling crc16 v0.4.0
+   Compiling aws-types v1.6.0
+   Compiling hashbrown v0.14.5
+   Compiling futures v0.3.34
+   Compiling itertools v0.14.0
+   Compiling sha1 v0.10.7
+   Compiling base64-simd v0.8.0
+   Compiling http v0.2.12
+   Compiling nom v8.0.0
+   Compiling strum v0.28.0
+   Compiling sealed v0.7.0
+   Compiling num-iter v0.1.46
+   Compiling sentin8-build-info v0.1.0 (https://github.com/Sentin8/sentin8-sdk?tag=sdk-v0.3.0#94c0aeb9)
+   Compiling rand_core v0.9.5
+   Compiling graviola v0.4.1
+   Compiling crossbeam-queue v0.3.14
+   Compiling indexmap v2.14.2
+   Compiling aws-smithy-types v1.8.1
+   Compiling lru v0.18.5
+   Compiling rand_chacha v0.9.0
+   Compiling nanoid v0.4.0
+   Compiling num-bigint-dig v0.8.6
+   Compiling crossbeam-channel v0.5.17
+   Compiling rand v0.9.5
+   Compiling dashmap v6.2.1
+   Compiling aws-smithy-types v0.101.0
+   Compiling petgraph v0.7.1
+   Compiling serde_json v1.0.151
+   Compiling toml_edit v0.22.27
+   Compiling simple_asn1 v0.6.4
+   Compiling rsa v0.9.10
+   Compiling tempfile v3.27.0
+   Compiling which v4.4.2
+   Compiling sentin8-jwt v0.1.0 (https://github.com/Sentin8/sentin8-sdk?tag=sdk-v0.3.0#94c0aeb9)
+   Compiling jsonwebtoken v9.3.1
+   Compiling serde_with v3.24.0
+   Compiling sentin8-rfw v0.1.0 (https://github.com/Sentin8/sentin8-sdk?tag=sdk-v0.3.0#94c0aeb9)
+   Compiling lalrpop v0.22.2
+   Compiling versions v7.0.0
+   Compiling toml v0.8.23
+   Compiling proc-macro2-diagnostics v0.10.1
+   Compiling logos-codegen v0.16.1
+   Compiling zstd v0.14.0
+   Compiling tracing-attributes v0.1.31
+   Compiling aws-smithy-runtime-api-macros v1.1.0
+   Compiling thiserror-impl v1.0.69
+   Compiling pin-project-internal v1.1.13
+   Compiling prost-derive v0.14.4
+   Compiling utoipa-gen v5.5.0
+   Compiling axum-macros v0.5.1
+   Compiling dispose-derive v0.4.2
+   Compiling strum_macros v0.28.0
+   Compiling pear_codegen v0.2.9
+   Compiling miette-derive v7.6.0
+   Compiling tokio-rustls v0.26.6
+   Compiling rustls-platform-verifier v0.7.1
+   Compiling rustls-graviola v0.4.0
+   Compiling pear v0.2.9
+   Compiling dispose v0.5.2
+   Compiling logos-derive v0.16.1
+   Compiling pin-project v1.1.13
+   Compiling tracing v0.1.44
+   Compiling thiserror v1.0.69
+   Compiling tokio-retry2 v0.5.8
+   Compiling tokio-retry2 v0.6.2
+   Compiling protobuf-support v3.7.2
+   Compiling sentin8-crypto v0.1.0 (https://github.com/Sentin8/sentin8-sdk?tag=sdk-v0.3.0#94c0aeb9)
+   Compiling miette v7.6.0
+   Compiling sqlx-core v0.8.6
+   Compiling h2 v0.4.19
+   Compiling tower v0.5.3
+   Compiling aws-smithy-runtime-api v1.19.0
+   Compiling opentelemetry v0.32.0
+   Compiling tracing-subscriber v0.3.23
+   Compiling axum-core v0.5.6
+   Compiling tower-http v0.7.1
+   Compiling tracing-futures v0.2.5
+   Compiling logos v0.16.1
+   Compiling figment v0.10.19
+   Compiling prost v0.14.4
+   Compiling prost-types v0.14.4
+   Compiling opentelemetry_sdk v0.32.1
+   Compiling tower-http v0.6.11
+   Compiling aws-smithy-schema v0.2.1
+   Compiling aws-credential-types v1.3.0
+   Compiling aws-smithy-http v0.64.1
+   Compiling aws-smithy-observability v0.3.0
+   Compiling aws-sigv4 v1.6.0
+   Compiling tracing-appender v0.2.5
+   Compiling aws-smithy-json v0.63.1
+   Compiling aws-smithy-xml v0.62.1
+   Compiling glide-logger v0.1.1
+   Compiling aws-smithy-query v0.62.1
+   Compiling sqlx-postgres v0.8.6
+   Compiling utoipa v5.5.0
+   Compiling protobuf-parse v3.7.2
+   Compiling lz4 v1.28.1
+   Compiling hyper v1.11.1
+   Compiling cedar-policy-core v4.13.0
+   Compiling protobuf-codegen v3.7.2
+   Compiling sentin8-bus-contracts v0.1.0 (https://github.com/Sentin8/sentin8-sdk?tag=sdk-v0.3.0#94c0aeb9)
+   Compiling bill8-risk-contracts v0.1.0 (https://github.com/Sentin8/bill8-sdk?tag=bill8-v0.1.0#9a5b7ee1)
+   Compiling sentin8-registration v0.1.0 (https://github.com/Sentin8/sentin8-sdk?tag=sdk-v0.3.0#94c0aeb9)
+   Compiling bill8-wire-contracts v0.1.0 (https://github.com/Sentin8/bill8-sdk?tag=bill8-v0.1.0#9a5b7ee1)
+   Compiling bill8-merchants-contracts v0.1.0 (https://github.com/Sentin8/bill8-sdk?tag=bill8-v0.1.0#9a5b7ee1)
+   Compiling bill8-billing-contracts v0.1.0 (https://github.com/Sentin8/bill8-sdk?tag=bill8-v0.1.0#9a5b7ee1)
+   Compiling bill8-checkout-contracts v0.1.0 (https://github.com/Sentin8/bill8-sdk?tag=bill8-v0.1.0#9a5b7ee1)
+   Compiling bill8-payments-contracts v0.1.0 (https://github.com/Sentin8/bill8-sdk?tag=bill8-v0.1.0#9a5b7ee1)
+   Compiling bill8-ledger-contracts v0.1.0 (https://github.com/Sentin8/bill8-sdk?tag=bill8-v0.1.0#9a5b7ee1)
+   Compiling bill8-reporting-contracts v0.1.0 (https://github.com/Sentin8/bill8-sdk?tag=bill8-v0.1.0#9a5b7ee1)
+   Compiling bill8-webhooks-contracts v0.1.0 (https://github.com/Sentin8/bill8-sdk?tag=bill8-v0.1.0#9a5b7ee1)
+   Compiling hyper-util v0.1.21
+   Compiling glide-core v0.1.1
+   Compiling sqlx-macros-core v0.8.6
+   Compiling hyper-rustls v0.27.10
+   Compiling hyper-timeout v0.5.2
+   Compiling reqwest v0.13.5
+   Compiling axum v0.8.9
+   Compiling tonic v0.14.6
+   Compiling aws-smithy-http-client v1.5.0
+   Compiling reqwest v0.12.28
+   Compiling sqlx-macros v0.8.6
+   Compiling sqlx v0.8.6
+   Compiling opentelemetry-http v0.32.0
+   Compiling sentin8-config v0.1.0 (https://github.com/Sentin8/sentin8-sdk?tag=sdk-v0.3.0#94c0aeb9)
+   Compiling tonic-prost v0.14.6
+   Compiling tonic-types v0.14.6
+   Compiling sentin8-fapiclient v0.1.0 (https://github.com/Sentin8/sentin8-sdk?tag=sdk-v0.3.0#94c0aeb9)
+   Compiling bill8 v0.1.0 (https://github.com/Sentin8/bill8-sdk?tag=bill8-v0.1.0#9a5b7ee1)
+   Compiling opentelemetry-proto v0.32.0
+   Compiling sentin8-errors v0.1.0 (https://github.com/Sentin8/sentin8-sdk?tag=sdk-v0.3.0#94c0aeb9)
+   Compiling sentin8-openapi v0.1.0 (https://github.com/Sentin8/sentin8-sdk?tag=sdk-v0.3.0#94c0aeb9)
+   Compiling sentin8-idempotency v0.1.0 (https://github.com/Sentin8/sentin8-sdk?tag=sdk-v0.3.0#94c0aeb9)
+   Compiling sentin8-tls-contracts v0.1.0 (https://github.com/Sentin8/sentin8-sdk?tag=sdk-v0.3.0#94c0aeb9)
+   Compiling opentelemetry-otlp v0.32.0
+   Compiling aws-smithy-runtime v1.16.0
+   Compiling glide-telemetry v0.1.1
+   Compiling glide-core-engine v0.1.1
+   Compiling aws-runtime v1.10.0
+   Compiling aws-sdk-ssooidc v1.116.0
+   Compiling aws-sdk-sts v1.119.0
+   Compiling aws-sdk-sso v1.114.0
+   Compiling aws-config v1.12.0
+   Compiling cedar-policy-formatter v4.13.0
+   Compiling cedar-policy v4.13.0
+   Compiling valkey-glide v0.9.0
+   Compiling sentin8-middleware v0.1.0 (https://github.com/Sentin8/sentin8-sdk?tag=sdk-v0.3.0#94c0aeb9)
+   Compiling sentin8-m2m v0.1.0 (https://github.com/Sentin8/sentin8-sdk?tag=sdk-v0.3.0#94c0aeb9)
+   Compiling sentin8-workload-registry v0.1.0 (https://github.com/Sentin8/sentin8-sdk?tag=sdk-v0.3.0#94c0aeb9)
+   Compiling sentin8-service-discovery v0.1.0 (https://github.com/Sentin8/sentin8-sdk?tag=sdk-v0.3.0#94c0aeb9)
+   Compiling sentin8-membus v0.1.0 (https://github.com/Sentin8/sentin8-sdk?tag=sdk-v0.3.0#94c0aeb9)
+   Compiling sentin8-audit v0.1.0 (https://github.com/Sentin8/sentin8-sdk?tag=sdk-v0.3.0#94c0aeb9)
+   Compiling sentin8-tls v0.1.0 (https://github.com/Sentin8/sentin8-sdk?tag=sdk-v0.3.0#94c0aeb9)
+   Compiling sentin8-auth-client v0.1.0 (https://github.com/Sentin8/sentin8-sdk?tag=sdk-v0.3.0#94c0aeb9)
+   Compiling sentin8-bus-client v0.1.0 (https://github.com/Sentin8/sentin8-sdk?tag=sdk-v0.3.0#94c0aeb9)
+   Compiling sentin8-outbox v0.1.0 (https://github.com/Sentin8/sentin8-sdk?tag=sdk-v0.3.0#94c0aeb9)
+   Compiling sentin8-shield v0.1.0 (https://github.com/Sentin8/sentin8-sdk?tag=sdk-v0.3.0#94c0aeb9)
+   Compiling sentin8-shell v0.1.0 (https://github.com/Sentin8/sentin8-sdk?tag=sdk-v0.3.0#94c0aeb9)
+   Compiling sentin8 v0.1.0 (https://github.com/Sentin8/sentin8-sdk?tag=sdk-v0.3.0#94c0aeb9)
+   Compiling bill8-payments v0.1.0 (/home/hamid/dev/sentin8.new/bill8/bill8-payments)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 42.37s
