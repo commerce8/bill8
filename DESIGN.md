@@ -145,7 +145,7 @@ sequenceDiagram
     P->>P: seed default customer/payment-method state (idempotent)
     B-->>L: SSE consumer (group bill8-ledger-envinit)
     L->>L: seed internal accounts (idempotent)
-    Note over P,L: platform emits; verticals self-init —<br/>zero vertical knowledge in sentin8
+    Note over P,L: platform emits, verticals self-init —<br/>zero vertical knowledge in sentin8
 ```
 
 ## 3. Data Model
@@ -154,7 +154,8 @@ One database (`bill8`), one schema per service (schema-per-service):
 
 ```mermaid
 erDiagram
-    BILL8_DB["bill8 database"] ||--|| SCHEMA_MERCHANTS : "schema merchants"
+    BILL8_DB["bill8 database"]
+    BILL8_DB ||--|| SCHEMA_MERCHANTS : "schema merchants"
     BILL8_DB ||--|| SCHEMA_PAYMENTS : "schema payments"
     BILL8_DB ||--|| SCHEMA_CHECKOUT : "schema checkout"
     BILL8_DB ||--|| SCHEMA_BILLING : "schema billing"
