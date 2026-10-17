@@ -1,4 +1,4 @@
-# BUSINESS.md: bill8 — Business Requirements & Functionality
+# bill8 — Business Requirements & Functionality
 
 > Audience: product owners, business analysts, and anyone evaluating what
 > the bill8 vertical **does for the business**. For architecture read
