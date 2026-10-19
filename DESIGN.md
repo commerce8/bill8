@@ -1,4 +1,4 @@
-# bill8 — Detailed Design Document (Vertical)
+# bill8 - Detailed Design Document (Vertical)
 
 Per-unit DDDs live beside each service/crate
 (`services/{svc}/DESIGN.md`, `crates/*/contracts/README.md`,
@@ -53,7 +53,7 @@ graph TD
 
 ## 2. Runtime Architecture
 
-**Cross-service charge flow** (the vertical's main end-to-end path — no
+**Cross-service charge flow** (the vertical's main end-to-end path - no
 service touches another's tables):
 
 ```mermaid
@@ -66,7 +66,7 @@ sequenceDiagram
     C->>P: POST /v1/charges (bearer user token)
     P->>P: Shield gate + idempotency
     P->>P: risk pre-authorization (inline rules / screening)
-    P->>L: POST /v1/balance-transactions (public API — never tables)
+    P->>L: POST /v1/balance-transactions (public API - never tables)
     L->>L: double-entry check + balance mutation
     L->>B: balance_transaction:created (ledger.outbox → relay)
     L-->>P: balance transaction id
@@ -145,7 +145,7 @@ sequenceDiagram
     P->>P: seed default customer/payment-method state (idempotent)
     B-->>L: SSE consumer (group bill8-ledger-envinit)
     L->>L: seed internal accounts (idempotent)
-    Note over P,L: platform emits, verticals self-init —<br/>zero vertical knowledge in sentin8
+    Note over P,L: platform emits, verticals self-init -<br/>zero vertical knowledge in sentin8
 ```
 
 ## 3. Data Model
@@ -166,9 +166,9 @@ erDiagram
 ```
 
 - **Schema-per-service**: each service's schema is its primary domain
-  schema — `payments.charges`, `ledger.balances`, `billing.invoices`, …
-  — and also carries the producer tables (`{leaf}.outbox`,
-  `{leaf}.audit_journal`). Table names carry NO `{svc}_` prefix — the
+  schema - `payments.charges`, `ledger.balances`, `billing.invoices`, …
+  - and also carries the producer tables (`{leaf}.outbox`,
+  `{leaf}.audit_journal`). Table names carry NO `{svc}_` prefix - the
   schema itself namespaces them.
 - **Ownership**: each service owns exactly its schema; cross-service
   reads go through public APIs, never table grants (a cross-service grant
@@ -176,16 +176,16 @@ erDiagram
 - **Roles**: `bill8_merchants_service`, `bill8_payments_service`,
   `bill8_checkout_service`, `bill8_billing_service`,
   `bill8_ledger_service`, `bill8_webhooks_service`,
-  `bill8_risk_service`, `bill8_reporting_service` — NOBYPASSRLS,
+  `bill8_risk_service`, `bill8_reporting_service` - NOBYPASSRLS,
   DSNs `postgres://{role}@…/bill8`, search_path `{leaf}, public`.
 - **Producer tables**: `{leaf}.outbox` (NOTIFY `{leaf}_outbox_changed`)
-  + `{leaf}.audit_journal` per service — drained by the shell's relay
+  + `{leaf}.audit_journal` per service - drained by the shell's relay
   and journal pusher.
 - Per-table catalogs: each `services/*/DESIGN.md` §3.
 
 ## 4. API Surface
 
-No vertical-level API of its own — every endpoint belongs to a service
+No vertical-level API of its own - every endpoint belongs to a service
 (see each DESIGN.md §4). The vertical's external contract is:
 
 | Surface | Path prefix | Consumers |
@@ -238,9 +238,9 @@ per-service `admin_scopes`/`policies`/`m2m_grants`/`pg_roles`/
 
 ```mermaid
 flowchart TD
-    FLOW_FAIL["Flow create fails"] -->|"at subscription create"| NB["nothing committed — 5xx, idempotent retry"]
+    FLOW_FAIL["Flow create fails"] -->|"at subscription create"| NB["nothing committed - 5xx, idempotent retry"]
     RELAY_FAIL["Bus outage"] -->|"producer"| OUTBOX["rows persist in {leaf}.outbox<br/>relay retries ≤10 → manual replay"]
-    WKR_FAIL["consumer dies"] -->|"Bus consumer group"| RED["messages pending — redelivered on restart"]
+    WKR_FAIL["consumer dies"] -->|"Bus consumer group"| RED["messages pending - redelivered on restart"]
     CRASH["crash mid-transaction"] -->|"atomic"| RB["domain + outbox + audit roll back together"]
     DLQ["poison event"] -->|"max_retries"| BUSDLQ["Bus DLQ → manual replay"]
     WH_FAIL["webhook 5xx/429/timeout"] -->|"exponential backoff"| WHDLQ["webhook delivery retry queue → manual replay"]
@@ -262,9 +262,9 @@ idempotent seeds. Webhooks owns its own signed-delivery retry queue.
 
 ## 8. Invariants, Insecure-Defaults Rejected, Unsafe Rationale
 
-- No bill8 service ever writes another service's tables — cross-flow
+- No bill8 service ever writes another service's tables - cross-flow
   goes through public APIs or Bus events.
-- Each service's role is granted exactly its own schema — one schema per
+- Each service's role is granted exactly its own schema - one schema per
   service; no shared vertical-wide schema exists.
 - No bill8 table exists outside the `bill8` database; no platform
   table outside `db sentin8` (except the registry reads granted at
@@ -283,7 +283,7 @@ idempotent seeds. Webhooks owns its own signed-delivery retry queue.
 
 The group Makefile's `make start` boots ONLY the platform base
 (`sentin8:acme, sentin8:auth, sentin8:proxy, sentin8:bus, sentin8:sys,
-sentin8:bff, sentin8:web`) plus this group's services — the
+sentin8:bff, sentin8:web`) plus this group's services - the
 `SENTIN8_SERVICES` boot pin when captain is down, the idempotent
 `captain start <types>` API form when it is up. `make stop` stops only
 this group's instance rows (the captain and platform stay up). The
@@ -294,8 +294,8 @@ dev reset): `design/sentin8-repository-split-design.md` §4.5.2.
 
 ```mermaid
 graph TD
-    U["Unit — per service<br/>modules/state machines/proration/ISO parsing/<br/>fee math/configs"] --> I["Integration — per service<br/>policy suites, handler tests,<br/>registration output checks"]
-    I --> E["E2E — e2e-ts<br/>UI + BFF proxy only<br/>(no direct DB/psql)"]
+    U["Unit - per service<br/>modules/state machines/proration/ISO parsing/<br/>fee math/configs"] --> I["Integration - per service<br/>policy suites, handler tests,<br/>registration output checks"]
+    I --> E["E2E - e2e-ts<br/>UI + BFF proxy only<br/>(no direct DB/psql)"]
 ```
 
 - **Unit**: money/path/proration logic is pure and covered in each
@@ -308,7 +308,7 @@ graph TD
 ## 10. Open Questions
 
 - Each service's `DESIGN.md` §10 lists its open items. The root
-  `backlog.md` is the single story list. No phased rollouts — every
+  `backlog.md` is the single story list. No phased rollouts - every
   feature is implemented once at its final target state.
 
 ---

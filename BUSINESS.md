@@ -1,4 +1,4 @@
-# bill8 — Business Requirements & Functionality
+# bill8 - Business Requirements & Functionality
 
 > Audience: product owners, business analysts, and anyone evaluating what
 > the bill8 vertical **does for the business**. For architecture read
@@ -6,29 +6,29 @@
 
 ## 1. Business Purpose
 
-bill8 is the **billing layer of the Sentin8 platform** — a complete
+bill8 is the **billing layer of the Sentin8 platform** - a complete
 payments and billing product that lets any merchant accept money, manage
 recurring revenue, onboard sellers, and pay out funds, all with a
 provable, replayable audit trail. It delivers:
 
-- **Frictionless acceptance** — merchants accept one-off and recurring
+- **Frictionless acceptance** - merchants accept one-off and recurring
   payments through hosted checkout pages and payment links, with no
   card-handling code of their own.
-- **Rail freedom** — merchants select the settlement channels that fit
+- **Rail freedom** - merchants select the settlement channels that fit
   their business: the platform's own finance rails, external acquirer
   and payment platforms, or direct bank connections. Channels are
   selectable per merchant, routable by cost, method, and geography, and
   new channels onboard without re-engineering the product.
-- **Recurring revenue** — subscriptions, metered usage, invoices,
+- **Recurring revenue** - subscriptions, metered usage, invoices,
   proration, coupons, and credits are first-class, so SaaS and usage-based
   businesses bill correctly without building a billing engine.
-- **Marketplace money movement** — connected accounts onboard through a
+- **Marketplace money movement** - connected accounts onboard through a
   guided flow, and funds split between platform and seller with explicit
   fees, held balances, and payouts.
-- **Provable money integrity** — every cent moved is a double-entry
+- **Provable money integrity** - every cent moved is a double-entry
   balance transaction; refunds and disputes are compensating records, so
   the books can never silently drift.
-- **Reliable integrations** — signed webhooks deliver every lifecycle
+- **Reliable integrations** - signed webhooks deliver every lifecycle
   event with retry, fraud rules block bad actors before money moves, and
   external integrators get API keys, client-side tokenization,
   deterministic test mode, and published specs.
@@ -45,7 +45,7 @@ provable, replayable audit trail. It delivers:
 | 6 | Webhooks | Event materialization, endpoint management, signed delivery |
 | 7 | Fraud prevention | Rules, velocity checks, sanctions screening, review queue |
 | 8 | Reporting | Report runs, report types, scheduled reports |
-| 9 | Settlement channels | Selectable rails — platform finance, external acquirer/payment platforms, bank rails — with routing and reconciliation |
+| 9 | Settlement channels | Selectable rails - platform finance, external acquirer/payment platforms, bank rails - with routing and reconciliation |
 | 10 | Integration access | Merchant API keys, client-side tokenization, deterministic test mode, published specs and SDKs |
 
 **What the vertical does NOT own (business boundary):**
@@ -96,7 +96,7 @@ The vertical's complete event surface (families):
 ## 5. Business Rules & Invariants
 
 1. Money is only ever moved through the ledger service.
-2. Charges and balance transactions are append-only — never mutated.
+2. Charges and balance transactions are append-only - never mutated.
 3. Refunds and disputes are compensating records referencing their origin.
 4. Every money movement nets to zero (double-entry).
 5. Every lifecycle change emits an event (outbox-first, same transaction).

@@ -1,7 +1,7 @@
-# bill8 — Billing Vertical
+# bill8 - Billing Vertical
 
 Payments, billing, and marketplace money movement: a vertical domain
-composed on the Sentin8 platform — a payments engine with charge/refund/
+composed on the Sentin8 platform - a payments engine with charge/refund/
 dispute lifecycle, recurring billing with invoices and proration, hosted
 checkout, connected-account onboarding and payouts, a double-entry money
 engine, webhook delivery, fraud rules, and the merchant/customer/staff
@@ -13,7 +13,7 @@ bill8 is the billing vertical of the Sentin8 platform: eight Rust
 services (merchants, payments, checkout, billing, ledger, webhooks, risk,
 reporting) that own the `bill8` PostgreSQL database, eight contract
 crates, a unified Rust SDK facade, and four Flutter apps. It contains no
-platform infrastructure of its own — identity, bus, storage, scheduling,
+platform infrastructure of its own - identity, bus, storage, scheduling,
 workflows, and supervision are consumed from the Sentin8 platform
 services.
 
@@ -22,9 +22,9 @@ services.
 A billing domain needs provable invariants: idempotent money movement,
 immutable charge records, atomic refunds and payouts, tenant isolation on
 every row, and auditable webhook delivery. It also needs **pluggable
-rails** — merchants must choose their settlement channels (the
+rails** - merchants must choose their settlement channels (the
 platform's finance vertical, external acquirers/payment platforms,
-direct bank rails) without the platform re-engineering — and external
+direct bank rails) without the platform re-engineering - and external
 integrators need API-key access, client-side tokenization, and
 published specs. Building these on shared platform services (Auth for
 identity, Bus for events, Flow for orchestration, Cron for scheduling,
@@ -94,31 +94,31 @@ graph TD
 
 ## 4. Key Traits and Data Structures
 
-- **Namespace facade** — every crate imports as `bill8::{service}::{…}`
+- **Namespace facade** - every crate imports as `bill8::{service}::{…}`
   (`bill8::payments::contracts::Charge`); the vertical consumes the
   platform only through `sentin8::*` (principles §2.1).
-- **Immutable money records** — charges and balance transactions are
+- **Immutable money records** - charges and balance transactions are
   append-only; refunds and disputes create compensating records rather
   than mutating originals, so the audit trail is always replayable.
-- **Double-entry money engine** — every money movement is a balance
+- **Double-entry money engine** - every money movement is a balance
   transaction debiting one balance and crediting another; a batch that
   does not net to zero is rejected before any write.
-- **Pluggable settlement channels** — a `ChannelAdapter` contract + a
+- **Pluggable settlement channels** - a `ChannelAdapter` contract + a
   runtime channel registry: any rail conforming to the contract
   (platform finance, external acquirer/payment platforms, bank rails)
   registers as data + an adapter; routing is declarative (cost, method,
   geography, failover); a channel never mutates balances.
-- **Event vocabulary** — `bill8:{service}:{resource}:{operation}` over
+- **Event vocabulary** - `bill8:{service}:{resource}:{operation}` over
   the DBX producer path (local `{leaf}.outbox` → shell relay → Bus
   `POST /v1/produce`).
-- **Scope vocabulary** — `bill8:{service}:{resource}:{action}`,
+- **Scope vocabulary** - `bill8:{service}:{resource}:{action}`,
   runtime-registered via `vertical enroll` from each service's
   `--print-registration`.
 
 ## 5. Rationale, Trade-offs, and Alternatives
 
 - **Vertical owns domain only**: identity/event fabric/storage are
-  platform services — the vertical never re-implements them
+  platform services - the vertical never re-implements them
   (zero compile-time vertical knowledge flows the other way, too:
   principles §4.14).
 - **Database-per-vertical, schema-per-service**: each service owns its
@@ -128,7 +128,7 @@ graph TD
   blanket cross-service grants.
 - **Money engine separated from payment orchestration**: the ledger
   service owns balances and money movement; payments owns the charge
-  lifecycle. Money is only ever moved through the ledger — a refund or
+  lifecycle. Money is only ever moved through the ledger - a refund or
   payout is a ledger operation, never a shadow write elsewhere.
 - **Pluggable rails over a single channel**: channel identity is
   registry data + an adapter (a channel that conforms to the
@@ -138,7 +138,7 @@ graph TD
 - **Delegation over embedding**: scheduling → Sentin8:Cron, hooks →
   Sentin8:Func, orchestration → Sentin8:Flow; the services implement
   only proxy-back handlers.
-- **Rejected: a monolithic "billing" service** — the eight-service split
+- **Rejected: a monolithic "billing" service** - the eight-service split
   keeps money movement (ledger), payment orchestration (payments),
   recurring billing (billing), and connected accounts (merchants)
   separate, each with its own scopes, tables, and event families.
@@ -151,7 +151,7 @@ graph TD
 - Terminal states never regress (guarded updates everywhere).
 - Charges and balance transactions are append-only; refunds/disputes are
   compensating records.
-- M2M identity is the workload certificate (auth DESIGN §4.3f) — a
+- M2M identity is the workload certificate (auth DESIGN §4.3f) - a
   stolen token is nothing; without the private key the handshake fails.
 
 ## 7. Unresolved Questions / Future Designs
@@ -168,7 +168,7 @@ graph TD
 ## Website
 
 The public website at **bill8.dev** lives in the sibling
-`bill8-site` repo — Docusaurus v3 on `@sentin8/site-engine`, with
+`bill8-site` repo - Docusaurus v3 on `@sentin8/site-engine`, with
 product/app/SDK pages and a Reference section harvested at build time
 from these repositories (program design:
 `../design/sentin8-websites-design.md`).
