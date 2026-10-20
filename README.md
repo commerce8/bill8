@@ -1,5 +1,7 @@
 # bill8 - Billing Vertical
 
+> Secure Post-Quantum-Safe Billing & Payment Platform That Heals and Scales Itself.
+
 Payments, billing, and marketplace money movement: a vertical domain
 composed on the Sentin8 platform - a payments engine with charge/refund/
 dispute lifecycle, recurring billing with invoices and proration, hosted
