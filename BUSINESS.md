@@ -160,4 +160,4 @@ The vertical's complete event surface (families):
 
 ---
 
-**Design attribution:** bill8 and its underlying concepts were designed by Hamid Jahanzad <Hamid@Jahanzad.com>.
+**Architecture & Design:** bill8 and its underlying concepts were designed by [Hamid Jahanzad](https://www.linkedin.com/in/hamidjahanzad/).
