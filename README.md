@@ -166,7 +166,7 @@ graph TD
 - Each service's `DESIGN.md` §10 carries the decided directions for its
   open items; the root `backlog.md` is the live story list. Items closed
   as decisions (certification external by design, cache scopes, colon-form
-  canonical) live in the design docs, not the backlog.
+  canonical) live in the design docs, not in a tracker.
 
 ---
 
